@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.9249232,
+          27.6953578
+        ]
+      },
+      "properties": {
+        "balloonContent": "Институт химии новых материалов",
+        "hintContent": "Институт химии новых материалов"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.9255491,
+          27.6943836
+        ]
+      },
+      "properties": {
+        "balloonContent": "Институт химии новых материалов",
+        "hintContent": "Институт химии новых материалов"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.9287676,
+          27.6998493
+        ]
+      },
+      "properties": {
+        "balloonContent": "Франциска Скорины"
+        "hintContent": "Франциска Скорины"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.9298295,
+          27.7002010
+        ]
+      },
+      "properties": {
+        "balloonContent": "Франциска Скорины"
+        "hintContent": "Франциска Скорины"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    }
+  ]
+}
