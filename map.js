@@ -18,4 +18,37 @@ ymaps.ready()
                 checkZoomRange: true
             });
     });
+
+        ymaps.route([
+            { type: 'wayPoint', point: [53.932963, 27.698408] },
+            { type: 'wayPoint', point: [53.9287676, 27.6998493] },
+            { type: 'wayPoint', point: [53.9255491, 27.6943836] },
+            { type: 'wayPoint', point: [53.9337122, 27.6902396] },
+            { type: 'wayPoint', point: [53.936719, 27.687718] },
+            { type: 'wayPoint', point: [53.9392151, 27.6873554] },
+            { type: 'wayPoint', point: [53.9424886, 27.6852923] }/*,
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },
+            { type: 'wayPoint', point: [] },*/
+        ], {
+            mapStateAutoApply: true
+        }).then(function (route) {
+            route.getPaths().options.set({
+                // в балуне выводим только информацию о времени движения с учетом пробок
+                balloonContentLayout: ymaps.templateLayoutFactory.createClass('{{ properties.humanJamsTime }}'),
+                // можно выставить настройки графики маршруту
+                strokeColor: '0000ffff',
+                opacity: 0.9
+            });
+            // добавляем маршрут на карту
+            myMap.geoObjects.add(route);
+        });
 });
+
